@@ -41,11 +41,18 @@ body{
     
 }
 
-.list-link{
+.list.active{
     display: flex;
     flex-direction: column;
     text-align: center;
     list-style: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.886);
+    position: fixed;
+}
+
+.list.desactive{
+    display: none;
 }
 
 .link{
@@ -55,6 +62,7 @@ body{
     transition-property: background-color,box-shadow;
     transition: 0.8s;
 }
+
 
 .link:hover{
     background-color: rgb(247, 244, 240);
