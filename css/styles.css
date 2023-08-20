@@ -63,14 +63,15 @@ body{
     text-decoration: none;
     margin-right: 5px;
     width: 90%;
-    transition-property: background-color,box-shadow;
+    transition-property: background-color,box-shadow,color;
     transition: 0.8s;
 }
 
 
 .link:hover{
-    background-color: rgb(247, 244, 240);
-    box-shadow: 3px 1px;
+    background-color: rgb(175, 172, 167);
+    box-shadow: 3px 1px blue;
+    color: white;
 }
 
 
