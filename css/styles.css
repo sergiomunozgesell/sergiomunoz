@@ -1,0 +1,174 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    padding-top: 1px;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    "menu"
+    "perfil"
+    "stack"
+    "proyectos"
+    "contacto"
+    ;
+    gap: 10px;
+}
+
+/* INI  Menu */
+
+.menu{
+    font-size: 30px;
+}
+
+.barra{
+    grid-area: menu;
+    width: 99.4%;
+    background-color: rgb(255, 255, 255);
+    border-bottom:  solid 1px;
+    box-shadow: 3px 6px rgb(232, 220, 220);
+    
+    
+}
+
+.list-link{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    margin-right: 5px;
+    width: 90%;
+    transition-property: background-color,box-shadow;
+    transition: 0.8s;
+}
+
+.link:hover{
+    background-color: rgb(247, 244, 240);
+    box-shadow: 3px 1px;
+}
+
+
+/** Inicio Profile */
+
+.profile{
+    grid-area: perfil;
+}
+
+.card-profile{
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+    background-color: rgb(66, 121, 189);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.image{
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20% solid;
+}
+
+.description{
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left:5px;
+}
+.description h1{
+    font-size: 30px;
+}
+
+.description ul{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    list-style-type: circle;
+}
+
+/*Stack **/
+.stack{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:
+    "titleS titleS" 
+    "front backend"
+    "front backend";
+    gap: 2px;
+}
+.stack-title{
+    color: black;
+    border-bottom: solid ;
+    text-align: center;
+    grid-area: titleS;
+}
+.card-img-top{
+    margin-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    border-bottom: 1px solid black;
+}
+
+.frontend{
+    grid-area: front;
+    text-align: center;
+}
+
+.frontend.card{
+    margin: 3px auto;
+    width: 80%;
+    font-size: auto;
+    height:auto;
+    text-align: center;
+
+}
+
+.backend{
+    grid-area: backend;
+    text-align: center;
+}
+.backend.card{
+    margin: 3px auto;
+    width: 80%;
+    font-size: auto;
+    height:auto;
+    text-align: center;
+}
+
+
+@media screen and (min-width:600px) {
+    
+    .list-link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+
+    .menu{
+        display: none;
+    }
+
+    
+}
