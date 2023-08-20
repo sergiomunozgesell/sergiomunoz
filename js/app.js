@@ -1,5 +1,6 @@
+/*** Menu toggle */
 const links = document.getElementById("list-link");
-const btnmenu = document.getElementById("menu").addEventListener("click",function toggle()
+var btnmenu = document.getElementById("menu").addEventListener("click",function toggle()
 {
 
     if(links.className === "list active"){
@@ -8,3 +9,11 @@ const btnmenu = document.getElementById("menu").addEventListener("click",functio
         links.className = "list active"
     }
 });
+
+
+/***
+ * Pointer cursor
+ */
+function pointer(menu){
+    menu.style.cursor = "pointer";
+}
